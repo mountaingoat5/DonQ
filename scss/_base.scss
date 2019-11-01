@@ -1,0 +1,208 @@
+
+/*------------------------- basic sprite sheet,-----------------------------------*/
+
+//@import "icon/*.png";
+//@include all-icon-sprites;
+
+
+
+/* ---------------------------animation sprite/sass------------------------ */
+//inclue above prite sheet 2 lines of code
+
+
+//    $icon-layout:horizontal; 
+
+/*  mix in from compass that makes verticle sprite sheet to 
+ horixontal sheet */
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC');
+/* font-family: 'IM Fell DW Pica SC', serif; */
+/* headings, book cover */
+
+@import url('https://fonts.googleapis.com/css?family=Eczar:600');
+/* font-family: 'Eczar', serif; */
+/* text body */
+
+
+
+body{
+	background-image: url("../img/paper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+	margin-top: 7%;
+	p{
+		font-family: 'Eczar', serif;
+		color: #190F05;
+    	font-size: 125%;
+    	margin-left: 20%;
+    	margin-right: 20%;
+    	line-height: 37px;
+		
+		a{
+			text-decoration: none;
+			color: #641013;
+		}
+		a:hover{
+			color: #E0252B;
+		}
+	}
+
+	img{
+/* 		align-self:center; */
+		margin-top: 5%;
+	}
+
+	h1{
+		font-family: 'IM Fell DW Pica SC', serif;
+		color: #190F05;
+	}
+
+	#title-1{
+		margin-top: 7%;
+    	font-size: 240%;
+	}
+
+	#title-2{
+		font-size: 500%;
+    	margin-top: 0%;
+
+	}
+
+	#title-3{
+	    font-size: 400%;
+    	margin-top: -3%;
+
+	}
+
+	#title-4{
+    	font-size: 400%;
+    	margin-top: 1%;
+	}
+
+}
+
+
+
+
+main{
+
+	margin-top: 10%;
+	margin-left: 2%;
+    margin-right: 2%;
+	padding-bottom: 2%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+
+	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	.shelf{
+		display: flex;
+		align-items: flex-end;
+		margin-right: auto;
+    	margin-left: auto;
+
+    	margin-top: 100px;
+
+    	border-bottom-style: ridge;
+    	border-color: rgba(54, 32, 12, .5);
+    	background-color: rgba(54, 32, 12, .5);
+    	padding-top: 25px;
+    	padding-left: 2%;
+    	padding-right: 2%;
+    	border-radius: 5px;
+    	border-width: 10px;
+		
+		a{
+			filter: blur(1px);
+
+		}
+
+		a:hover{
+			opacity: .9;
+			filter: blur(0px);
+
+		}
+
+	}
+
+
+}
+
+section{
+	text-align: center;
+	
+	margin-left: 15%;
+	margin-right: 15%;
+	
+
+	h3{
+
+		font-family: 'IM Fell DW Pica SC', serif;
+		color: #190F05;
+		font-size: 250%
+	}
+
+	p{
+		font-family: 'Eczar', serif;
+		color: #190F05;
+		margin-top: -3%;
+		line-height: 26px;
+	}
+}
+
+footer{
+	background-color: #333333;
+	height: 25vh;
+
+	margin-top: 5%;
+
+	#foot-logo{
+		padding: 3%;
+		padding-left: 5%;
+	}
+/* 	#foot-nav{
+		float: right;
+		padding: 3%;
+		padding-right: 5%;
+
+	} */
+
+	div{
+
+		float: right;
+		padding: 3%;
+		padding-right: 5%;
+			
+			a{
+				padding: 15px;
+			}
+			a:hover{
+				opacity: 0.5;
+			}
+	}
+	p{
+		color: #CCCCCC;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
